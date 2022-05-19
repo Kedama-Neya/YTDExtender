@@ -1,17 +1,18 @@
 {
-  "name": "YouTube の動画の説明を自動展開するツール",
+  "name": "YouTube をちょっと快適にするツール",
+  "description": "動画の概要欄を常に展開状態にする拡張機能です。少しずつ快適になる要素を増やす予定です。",
   "manifest_version": 3,
-  "version": "2022.5.19.114",
-  "description": "ServiceWorker と SPA 何も分からないので毎秒チェックする力技で動画説明をこじ開ける拡張機能です。",
+  "version": "2022.5.19.124",
+  "permissions": [
+    "scripting"
+  ],
   "host_permissions": [
     "https://www.youtube.com/"
   ],
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["script.js"],
-      "run_at": "document_end",
-      "all_frames": true
+      "js": ["js/script.js"]
     }
   ]
 }
