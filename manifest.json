@@ -1,8 +1,8 @@
 {
-  "name": "YouTube をちょっと快適にするツール",
+  "name": "YTDExtender",
   "description": "動画の概要欄を常に展開状態にする拡張機能です。少しずつ快適になる要素を増やす予定です。",
   "manifest_version": 3,
-  "version": "2022.5.19.124",
+  "version": "2022.5.19.125",
   "permissions": [
     "scripting"
   ],
