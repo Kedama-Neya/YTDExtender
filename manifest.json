@@ -1,0 +1,17 @@
+{
+  "name": "YouTube の動画の説明を自動展開するツール",
+  "manifest_version": 3,
+  "version": "2022.5.19.114",
+  "description": "ServiceWorker と SPA 何も分からないので毎秒チェックする力技で動画説明をこじ開ける拡張機能です。",
+  "host_permissions": [
+    "https://www.youtube.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["script.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
